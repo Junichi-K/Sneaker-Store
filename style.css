@@ -1,0 +1,572 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.nav_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.search_input {
+    border: none;
+    background-color: transparent;
+}
+
+.search_input::placeholder {
+    color: lightgray;
+}
+
+.limited_offer {
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+.nav_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_item {
+    padding-left: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.slider {
+    background: url("https://images.unsplash.com/photo-1506259091721-347e791bab0f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    overflow: hidden;
+}
+
+.slider_wrapper {
+    display: flex;
+    width: 500vw;
+    height: 89.4vh;  /* important observation made here. vw = viewport width and vh = viewport height. Next time try adjusting these two and see if it makes a wee bit of difference */   
+    transition: all 1s ease-in-out;
+}
+
+.slider_item {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider_item:nth-child(1) .slider_bg{
+    background-color: #369e62;
+}
+
+.slider_item:nth-child(2) .slider_bg{
+    background-color: rebeccapurple;
+}
+
+.slider_item:nth-child(3) .slider_bg{
+    background-color: teal;
+}
+
+.slider_item:nth-child(4) .slider_bg{
+    background-color: cornflowerblue;
+}
+
+.slider_item:nth-child(5) .slider_bg{
+    background-color: rgb(96, 105, 85);
+}
+
+.slider_item:nth-child(1) .slider_price{
+    color: #369e62;
+}
+
+.slider_item:nth-child(2) .slider_price{
+    color: rebeccapurple;
+}
+
+.slider_item:nth-child(3) .slider_price{
+    color: teal;
+}
+
+.slider_item:nth-child(4) .slider_price{
+    color: cornflowerblue;
+}
+
+.slider_item:nth-child(5) .slider_price{
+    color: rgb(96, 105, 85);
+}
+.slider_image {
+    z-index: 1;
+}
+
+.slider_bg {
+    height: 750px;
+    width: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.slider_title {
+    position: absolute;
+    color: rgb(172, 132, 140);
+    top: 10%;
+    right: 10%;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.slider_price {
+    position: absolute;
+    color: black;
+    top: 10%;
+    left: 10%;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.buy_button {
+    position: absolute;
+    color: black;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    background-color: pink;
+    cursor: pointer;
+    border: transparent;
+}
+
+.buy_button:hover {
+    background: green;
+    color: white;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature_image {
+    width: 50px;
+    height: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.feature_description {
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+.product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.product_image {
+    width: 50%;
+}
+
+.product_details {
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    width: 40%;
+    padding: 50px;
+}
+
+.product_title {
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.product_description {
+    font-size: 24px;
+    color: gray;
+}
+
+.colors, .sizes {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child {
+    background-color: teal
+}
+
+.size {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.product_button {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 5%;
+    cursor: pointer; 
+}
+
+.product_button:hover {
+    background-color: white;
+    color: black;
+}
+
+.payment_portal {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    
+    box-shadow: 10px 28px 25px 0px rgba(0,0,0,1);
+}
+
+.payment_title {
+    text-align: center;
+    font-size: 20px;
+    color: darkgray;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.payment_input {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid darkgray;
+}
+
+.card_icons {
+    display: flex;
+}
+
+.card_icon {
+    margin-right: 10px;
+}
+
+.card_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small {
+    width: 30%; 
+}
+
+.pay_button {
+    position: absolute;
+    height: 40px;
+    bottom: -40;
+    width: 100%;
+    left: 0; 
+
+    box-shadow: 10px 28px 25px 0px rgba(0,0,0,1);
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer; 
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 3%;
+    right: 3%;
+    text-align: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.gallery {
+    padding: 50px;
+    display: flex;
+}
+
+.gallery_item {
+    flex: 1;
+    padding: 50px;
+}
+
+.gallery_img {
+    width: 100%;
+}
+
+.new_season {
+    display: flex;
+}
+
+.season_item {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.season_img {
+    width: 100%;    /* width 100 means the image takes up 100% of the width of its parent containersn and flex: 1 makes sure that all 
+                    3 containers are of equal sizes*/
+
+}
+
+.season_title {
+    font-size: 40px;
+}
+
+.season_button {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+}
+
+.footer_left {
+    flex: 2;    /* aparently it is used to make footer left grow twice as big as the other containers */
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footer_right {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_menu_title {
+    font-size: 16px;
+}
+
+.footer_menu_list {
+    padding: 0; /* alright so browsers typically add a bit of a padding to the beginning of list items which pads them from the left side of the containers. So in order to remove that we use this command */
+    list-style: none;
+}
+
+.footer_list_item {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.footer_input {
+    padding: 5px;
+}
+
+.footer_button {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.footer_socials {
+    display: flex;
+}
+
+.social_icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.copyright {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 20px; 
+    }
+    
+    .nav_bottom {
+        flex-wrap: wrap; /* wow a cool feature it just shifts the nav items to the next row if it overflows pretty cool*/
+    }
+
+    .search {
+        display: none;
+    }
+
+    .menu_item {
+        padding-left: 20px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .slider {
+        clip-path: none;
+    }
+
+    .slider_image {
+        width: 80%;
+    }
+
+    .slider_bg {
+        width: 100%;
+        height: 50%;
+    }
+
+    .slider_title {
+        display: none;
+    }
+    
+    .slider_price {
+        left: 8%;
+        top: 5%;
+        border: 2px solid white;
+        padding: 8px;
+        background-color: lightgray;
+    }
+
+    .buy_button {
+        top: 78%;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .product {
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .product_image {
+
+        width: 80%;
+    }
+
+    .product_details {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 0;
+    }
+
+    .product_title {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .product_description {
+        font-size: 16px;
+    }
+
+    .gallery {
+        display: none;
+    }
+
+    .new_season {
+        flex-direction: column;
+    }
+
+    .season_item:nth-child(2) {
+        padding: 50px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_left {
+        padding: 20px;
+        width: 85%;
+    }
+
+    .footer_right {
+        padding: 20px;
+        width: 89%;
+        background-color: whitesmoke;
+        align-items: center;
+    }
+
+    .payment_portal {
+        width: 89%;
+        padding: 20px;
+    }
+}
