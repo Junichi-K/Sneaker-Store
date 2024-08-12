@@ -43,6 +43,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Special thanks to Lama Dev for the YouTube tutorial that helped guide the development of this project.
-* Special thanks to [Google Fonts](https://fonts.google.com/) for the typography.
+* Special thanks to Lama Dev for the YouTube tutorial that helped guide the development of the project skeleton and with images.
+* [Google Fonts](https://fonts.google.com/) for the typography.
 
