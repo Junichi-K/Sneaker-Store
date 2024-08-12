@@ -4,7 +4,7 @@ Bottom Kicks is a stylish and responsive online shoe store showcasing a variety 
 
 ## Getting Started
 
-These instructions will guide you through setting up the website locally or you can simply open the website link if you want to visit.
+These instructions will guide you through setting up the website locally or you can simply open the website link if simply viewing.
 
 ### Installing
 
