@@ -1,6 +1,6 @@
 # Bottom Kicks
 
-Bottom Kicks is a stylish and responsive online shoe store showcasing a variety of sneakers. The website features a sleek slider showcasing top products, a dynamic product display section, and various functionalities to enhance the shopping experience. Users can explore different shoe models, view product details, and make purchases seamlessly.
+Bottom Kicks is a stylish and responsive online shoe store showcasing a variety of sneakers. The website features a sleek slider showcasing top products, a dynamic product display section, and various functionalities to enhance the shopping experience. Users can explore different shoe models, view product details, and make psuedo purchases.
 
 ## Getting Started
 
